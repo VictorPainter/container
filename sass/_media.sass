@@ -1,0 +1,78 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+    .humburger
+        display: block
+    .top__line
+        flex-direction: column
+    .main__menu
+        display: none
+        position: absolute
+        top: 120%
+        left: 0
+        right: 0
+        background: #00133D
+        text-align: center
+    .main__menu li
+        display: block
+        margin: 0
+        margin-bottom: 15px
+    .login__btn
+        margin-top: 30px
+        width: 100px
+    .promo__section-content::after
+        display: none
+    .service__icon-inner
+        flex-direction: column
+        align-items: center
+    .features__img
+        display: none
+    .about__content-description
+        font-size: 22px
+    .mt_description
+        font-size: 22px
+    .promo__section-content h2
+        font-size: 32px
+    .import__export
+        font-size: 25px
+    
+// ≥576px
++media-breakpoint-down(xs)
+    .promo__section-content h2
+        font-size: 22px
+        line-height: 33px
+    .import__export
+        font-size: 24px
+        margin-top: 55px
+    .tabs
+        text-align: center
+    .tabs li
+        display: block
+        margin: 0
+        margin-bottom: 15px
+    
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
