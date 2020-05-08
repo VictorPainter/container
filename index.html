@@ -15,8 +15,8 @@
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script src="https://kit.fontawesome.com/6997fd8dc6.js" crossorigin="anonymous"></script>
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
 	
 	<!-- Custom Browsers Color Start -->
@@ -78,18 +78,54 @@
 					</div>
 				</div>
 
+				<!-- Start Import/Export Section -->
+
 				<div class="import__export">
 					<div class="import__export-title">
 						<h2>Import – Export</h2>
 					</div>
 					<div class="container">
 						<div class="row">
-
+							<form action="" class="import__export-form">
+								<div class="import__export-form-item">
+									<label>Shipping type:</label>
+									<select name="" id="">
+										<option value="">Port to Port (P2P)</option>
+										<option value="">Door to Door (D2D)</option>
+										<option value="">Port to Port (P2P)</option>
+									</select>
+								</div>
+								<div class="import__export-form-item">
+									<label>Origin port:</label>
+									<select name="" id="">
+										<option value="">Tel Aviv</option>
+										<option value="">Tel Aviv</option>
+										<option value="">Tel Aviv</option>
+									</select>
+								</div>
+								<img class="arrow" src="img/arrows.svg" alt="">
+								<div class="import__export-form-item">
+									<label>Destination port:</label>
+									<select name="" id="">
+										<option value disabled selected>Select a port</option>
+										<option value="">Tel Aviv</option>
+										<option value="">Tel Aviv</option>
+										<option value="">Tel Aviv</option>
+									</select>
+								</div>
+								<div class="import__export-form-item inputer">
+									<label>Ready to load:</label>
+									<input id="datepicker" type="text" placeholder="Tue, 14 Apr">
+								</div>
+								<button class="import__export-form-btn" type="submit">Get a quote</button>
+							</form>
 						</div>
 					</div>
 				</div>
 
 			</section>
+
+			<!-- Start Service Icon Section -->
 
 			<section class="service__icon">
 				<div class="container">
@@ -389,11 +425,9 @@
 							</ul>
 						</div>
 					</div>
-
-					<div class="row">
-						<div id="tab-1-content" class="tab-content-item show">
-							<div class="row">
-
+					
+					<div id="tab-1-content" class="tab-content-item show">
+						<div class="row">
 								<div class="col-md-4">
 									<div class="tab__content-item">
 										<h3>How do you guarantee best prices?</h3>
@@ -468,6 +502,7 @@
 										</div>
 									</div>
 								</div>
+								
 							</div>
 						</div>
 
@@ -609,7 +644,7 @@
 							</form>
 						</div>
 
-						<div class="col-md-4 d-flex justify-content-end">
+						<div class="col-md-4 d-flex justify-content-end mobile__resp">
 							<div class="footer__contact">
 								<ul>
 									<li>
@@ -631,7 +666,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-4 d-flex justify-content-end">
+						<div class="col-md-4 d-flex justify-content-end mobile__resp">
 							<div class="footer__social">
 								<h3>Our socials:</h3>
 								<ul>
@@ -646,9 +681,6 @@
 				</div>
 
 			</footer>
-
-
-
 		</main>
 
 
@@ -658,6 +690,8 @@
 
 	</div>
 	<script src="js/scripts.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
 </body>
 </html>

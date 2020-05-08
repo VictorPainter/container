@@ -45,4 +45,8 @@ $(function() {
 		$('.main__menu').slideToggle();
 	});
 
+	$( function() {
+		$( "#datepicker" ).datepicker({ dateFormat: 'D, dd M' });
+	});
+
 });
