@@ -49,4 +49,6 @@ $(function() {
 		$( "#datepicker" ).datepicker({ dateFormat: 'D, dd M' });
 	});
 
+	$('select').selectize({});
+
 });

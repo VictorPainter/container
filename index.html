@@ -6,15 +6,13 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>ComTainer</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+
 	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script src="https://kit.fontawesome.com/6997fd8dc6.js" crossorigin="anonymous"></script>
 	<!-- Template Basic Images End -->
@@ -30,9 +28,7 @@
 <body>
 
 	<div class="wrapper">
-
 		<header class="header">
-			
 			<div class="container">
 				<div class="row">
 					<div class="top__line">
@@ -40,7 +36,6 @@
 							<div class="burger"></div>
 						</div>
 						<a href="/"><img src="img/logo.png" alt="logo"></a>
-
 						<nav>
 							<ul class="main__menu">
 								<li><a href="#" class="active">Import – Export</a></li>
@@ -52,18 +47,16 @@
 								<li><a href="#">Contact</a></li>
 							</ul>
 						</nav>
-
 						<a href="#" class="login__btn">Log in</a>
-
 					</div>
 				</div>
 			</div>
 		</header>
-		
-
+	
 		<main class="main">
 
 			<section class="promo__section">
+
 				<div class="promo__section-inner" style="background-image: url(img/footer__bg.png);">
 					<div class="container">
 						<div class="row">
@@ -77,7 +70,6 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- Start Import/Export Section -->
 
 				<div class="import__export">
@@ -89,28 +81,31 @@
 							<form action="" class="import__export-form">
 								<div class="import__export-form-item">
 									<label>Shipping type:</label>
-									<select name="" id="">
-										<option value="">Port to Port (P2P)</option>
-										<option value="">Door to Door (D2D)</option>
-										<option value="">Port to Port (P2P)</option>
+									<select name="shipping_type">
+										<option>Port to Port (P2P)</option>
+										<option>Door to Door (D2D)</option>
+										<option>Port to Port (P2P)</option>
 									</select>
 								</div>
 								<div class="import__export-form-item">
 									<label>Origin port:</label>
-									<select name="" id="">
-										<option value="">Tel Aviv</option>
-										<option value="">Tel Aviv</option>
-										<option value="">Tel Aviv</option>
+									<select name="origin_port">
+										<option value disabled selected>Select service</option>
+										<option>Option One</option>
+										<option>Option Two</option>
+										<option>Option Three</option>
+										<option>Option Four</option>
 									</select>
 								</div>
 								<img class="arrow" src="img/arrows.svg" alt="">
 								<div class="import__export-form-item">
 									<label>Destination port:</label>
-									<select name="" id="">
+									<select name="destination_port">
 										<option value disabled selected>Select a port</option>
-										<option value="">Tel Aviv</option>
-										<option value="">Tel Aviv</option>
-										<option value="">Tel Aviv</option>
+										<option>Option One</option>
+										<option>Option Two</option>
+										<option>Option Three</option>
+										<option>Option Four</option>
 									</select>
 								</div>
 								<div class="import__export-form-item inputer">

@@ -25,6 +25,7 @@ body
 		&:required:valid
 			border-color: green
 
+
 .img-responsive
 	display: block
 	width: 100%
@@ -52,6 +53,7 @@ b, strong
 	background-color: #00133d
 	&.active
 		background-color: #00133d
+
 
 
 .main__menu
@@ -625,7 +627,61 @@ b, strong
 		padding-top: 20px
 		&::placeholder
 			color: #000000
-		
+
+
+input, textarea, select,
+.selectize-control .selectize-input,
+.selectize-control.single .selectize-input.input-active
+	width: 209px
+	height: 60px
+	border: none
+	border-radius: 5px
+	font-size: 16px
+	font-weight: bold
+	margin-right: 5px
+	padding-left: 10px
+	padding-top: 10px
+	cursor: pointer
+
+select
+	padding: 10px 22px
+
+.selectize-control .selectize-input
+	box-shadow: none
+	overflow: inherit
+	line-height: inherit
+	text-align: left
+	input
+		font-size: 16px
+	&.dropdown-active::before
+		background-color: transparent
+
+.selectize-control.single
+	.selectize-input, &.dropdown-active
+		&::after
+			border: none
+			content: '\f107'
+			font-size: 20px
+			font-family: "Font Awesome 5 Free"
+			position: absolute
+			right: 30px
+			top: 12px
+		&.dropdown-active::after
+			content: '\f106'
+
+	.selectize-dropdown
+		border: none
+		font-size: 15px
+		border-radius: 0
+		text-align: left
+		z-index: 9999
+		&-content
+			.option
+				padding: 10px 22px
+				&.active
+					background-color: lighten(#0989c2, 15)
+
+
 
 .import__export-form-item
 	position: relative
@@ -634,8 +690,9 @@ b, strong
 		color: #01133D;
 		padding: 0 8px
 		position: absolute
-		top: 0
-		left: 5px
+		top: -5px
+		left: 4px
+		z-index: 999
 	&.inputer
 		&::after
 			content: ''
@@ -651,6 +708,8 @@ b, strong
 			left: 47px
 .arrow
 	margin-right: 5px
+	position: relative
+	top: -3px
 
 .import__export-form-btn
 	width: 200px
