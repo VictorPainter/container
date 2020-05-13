@@ -163,12 +163,12 @@ b, strong
 
 .humburger
   display: none
-  position: absolute
+  position: relative
   top: 50%
-  right: -40px
+  left: 31px
   transform: translate(-50%, -50%)
-  width: 80px
-  height: 80px
+  width: 50px
+  height: 50px
   cursor: pointer
   &.active .burger
     background: rgba(0,0,0,0)
@@ -181,8 +181,8 @@ b, strong
       transform: rotate(135deg)
     
 .burger
-  width: 50px
-  height: 6px
+  width: 30px
+  height: 4px
   background: #fff
   position: absolute
   top: 50%
@@ -193,15 +193,15 @@ b, strong
   &::before, &::after
     content: ''
     position: absolute
-    width: 50px
-    height: 6px
+    width: 30px
+    height: 4px
     background: #fff
     box-shadow: 0 2px 5px rgba(0,0,0,.2)
     transition: .5s
   &::before
-    top: -16px
+    top: -12px
   &::after
-    top: 16px
+    top: 12px
 
 .section__title
 	h2
