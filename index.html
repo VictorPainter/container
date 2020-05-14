@@ -35,7 +35,7 @@
 						<a href="/"><img src="img/logo.svg" alt="logo"></a>
 						<nav>
 							<ul class="main__menu">
-								<li><a href="#import" class="active">Import – Export</a></li>
+								<li><a href="#import">Import – Export</a></li>
 								<li><a href="#features">Features</a></li>
 								<li><a href="#about">About us</a></li>
 								<li><a href="#">Reviews</a></li>
@@ -56,7 +56,6 @@
 		<main class="main">
 
 			<section class="promo__section">
-
 				<div class="promo__section-inner" style="background-image: url(img/footer__bg.png);">
 					<div class="container">
 						<div class="row">
@@ -82,9 +81,10 @@
 								<div class="import__export-form-item">
 									<label>Shipping type:</label>
 									<select name="shipping_type">
-										<option>Door to Port</option>
-										<option>Door to Door</option>
-										<option>Port to Door</option>
+										<option>Port to Port(P2P)</option>
+										<option>Door to Port(D2P)</option>
+										<option>Port to Door(P2D)</option>
+										<option>Door to Door(D2D)</option>
 									</select>
 								</div>
 								<div class="import__export-form-item">
@@ -147,13 +147,12 @@
 			</section>
 
 			<!-- Start Features Section -->
-			<div id='features'></div>
-			<section class="features">
-				<div class="section__title">
-					<h2>Features</h2>
-				</div>
+			<section class="features" id='features'>
+				
 				<div class="container">
-					
+					<div class="section__title">
+						<h2>Features</h2>
+					</div>
 					<div class="features__item">
 						<div class="row">
 							<div class="col-md-6">
@@ -221,16 +220,17 @@
 							</div>
 						</div>
 					</div>
+					
 				</div>
+				
 			</section>
 
 			<!-- Start About Section -->
-			<div id='about'></div>
-			<section  class="about">
-				<div class="section__title">
-					<h2>About us</h2>
-				</div>
+			<section id='about' class="about">
 				<div class="container">
+					<div class="section__title">
+						<h2>About us</h2>
+					</div>
 					<div class="row">
 						<div class="col-md-6">
 							<div class="about__img">
@@ -308,9 +308,7 @@
 			</section>
 
 			<!-- Start Blog Section -->
-			<div id="blog"></div>
-
-			<section class="blog">
+			<section id="blog" class="features blog">
 				<div class="blog__title">
 					<h2>Blog</h2>
 					<div class="row d-flex justify-content-center">
@@ -404,8 +402,7 @@
 			</section>
 
 			<!-- Start FAQ Section -->
-			<div id='faq'></div>
-			<section class="faq__section">
+			<section id='faq' class="features">
 				<div class="section__title">
 					<h2>FAQ</h2>
 				</div>
