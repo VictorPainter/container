@@ -1,5 +1,6 @@
 $(function() {
-
+	
+	
 	const tabItems = document.querySelectorAll('.tab-item');
 	const tabContentItems = document.querySelectorAll('.tab-content-item');
 
@@ -49,7 +50,7 @@ $(function() {
 		$( "#datepicker" ).datepicker({ dateFormat: 'D, dd M' });
 	});
 
-	$('select').selectize({});
+	
 
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		anchor.addEventListener('click', function (e) {
@@ -60,5 +61,23 @@ $(function() {
 			});
 		});
 	});
+
+	$('select').selectize({});
+
+	$('#select').change(function() {
+		var $optionValue = $(this).children("option:selected").val();
+		if($optionValue == 'Door to Door(D2D)'){
+			$('#origin_port').html('Origin city, state, country');
+			$('#destination_port').html('Destination city, state, country');
+		}else if($optionValue == 'Port to Door(P2D)'){
+			$('#origin_port').html('Origin port');
+			$('#destination_port').html('Destination city, state, country');
+		}else if($optionValue == 'Door to Port(D2P)'){
+			$('#origin_port').html('Origin city, state, country');
+			$('#destination_port').html('Destination port');
+		}
+	});
+	 
+
 
 });

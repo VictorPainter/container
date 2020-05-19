@@ -80,15 +80,15 @@
 							<form action="" class="import__export-form">
 								<div class="import__export-form-item">
 									<label>Shipping type:</label>
-									<select name="shipping_type">
-										<option>Port to Port(P2P)</option>
-										<option>Door to Port(D2P)</option>
-										<option>Port to Door(P2D)</option>
-										<option>Door to Door(D2D)</option>
+									<select id="select"  name="shipping_type">
+										<option id="PortTwoPort">Port to Port(P2P)</option>
+										<option id="DoorTwoPort">Door to Port(D2P)</option>
+										<option id="PortTwoDoor">Port to Door(P2D)</option>
+										<option id="DoorTwoDoor">Door to Door(D2D)</option>
 									</select>
 								</div>
 								<div class="import__export-form-item">
-									<label>Origin port:</label>
+									<label id='origin_port'>Origin port:</label>
 									<select name="origin_port">
 										<option value disabled selected>Select service</option>
 										<option>Option One</option>
@@ -99,7 +99,7 @@
 								</div>
 								<img class="arrow" src="img/arrows.svg" alt="">
 								<div class="import__export-form-item">
-									<label>Destination port:</label>
+									<label id='destination_port'>Destination port:</label>
 									<select name="destination_port">
 										<option value disabled selected>Select a port</option>
 										<option>Option One</option>
